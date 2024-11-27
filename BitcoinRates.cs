@@ -16,6 +16,7 @@ namespace BitcoinCalculator
         public USD USD { get; set; }
         public GBP GBP { get; set; }
         public EUR EUR { get; set; }
+        public EEK EEK { get; set; }
     }
 
     public class EUR
@@ -36,6 +37,14 @@ namespace BitcoinCalculator
         public double rate_float { get; set; }
     }
     public class USD
+    {
+        public string code { get; set; }
+        public string symbol { get; set; }
+        public string rate { get; set; }
+        public string description { get; set; }
+        public double rate_float { get; set; }
+    }
+    public class EEK
     {
         public string code { get; set; }
         public string symbol { get; set; }

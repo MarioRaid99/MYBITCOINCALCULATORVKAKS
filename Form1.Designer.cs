@@ -43,7 +43,8 @@
             this.currencyselector.Items.AddRange(new object[] {
             "EUR",
             "USD",
-            "EEK"});
+            "EEK",
+            "GBP"});
             this.currencyselector.Location = new System.Drawing.Point(32, 119);
             this.currencyselector.Name = "currencyselector";
             this.currencyselector.Size = new System.Drawing.Size(121, 21);
@@ -67,12 +68,13 @@
             this.bitcoinamountinput.Name = "bitcoinamountinput";
             this.bitcoinamountinput.Size = new System.Drawing.Size(121, 20);
             this.bitcoinamountinput.TabIndex = 2;
+            this.bitcoinamountinput.TextChanged += new System.EventHandler(this.bitcoinamountinput_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.ForeColor = System.Drawing.Color.Lime;
             this.label1.Location = new System.Drawing.Point(29, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 13);
@@ -84,17 +86,18 @@
             this.resultlable.BackColor = System.Drawing.Color.White;
             this.resultlable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.resultlable.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.resultlable.Location = new System.Drawing.Point(32, 229);
+            this.resultlable.ForeColor = System.Drawing.Color.Lime;
+            this.resultlable.Location = new System.Drawing.Point(35, 372);
             this.resultlable.Name = "resultlable";
-            this.resultlable.Size = new System.Drawing.Size(159, 49);
+            this.resultlable.Size = new System.Drawing.Size(651, 49);
             this.resultlable.TabIndex = 4;
             // 
             // tulemuslable
             // 
             this.tulemuslable.AutoSize = true;
             this.tulemuslable.BackColor = System.Drawing.Color.Transparent;
-            this.tulemuslable.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tulemuslable.Location = new System.Drawing.Point(32, 210);
+            this.tulemuslable.ForeColor = System.Drawing.Color.Lime;
+            this.tulemuslable.Location = new System.Drawing.Point(32, 356);
             this.tulemuslable.Name = "tulemuslable";
             this.tulemuslable.Size = new System.Drawing.Size(50, 13);
             this.tulemuslable.TabIndex = 5;
